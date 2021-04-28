@@ -5,7 +5,7 @@
  *
  *
  */
-void LED_PORTB0_HIGH(void)
+uint8_t LED_PORTB0_HIGH(void)
 {
     return PORTB |=(1<<PB0);
 }
@@ -14,7 +14,7 @@ void LED_PORTB0_HIGH(void)
  *
  */
 
-void LED_PORTB0_LOW(void)
+uint8_t LED_PORTB0_LOW(void)
 {
      return PORTB&=~(1<<PB0);
 

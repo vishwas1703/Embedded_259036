@@ -1,12 +1,8 @@
 #include<avr/io.h>
+#include"Activity1.h"
 void activity_1(void)
 {
-    /**
-     * @brief Construct a new initialise ports object
-     * @note which initialise all ports required for this project
-     * 
-     */
-    initialise_ports();
+    
     while(1)
     {
         /**

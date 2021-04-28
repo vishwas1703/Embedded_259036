@@ -9,7 +9,6 @@
  * 
  */
 #include<avr/io.h>
-#include "Activity1.h"
 /**
  * @brief Initialise of input output ports
  * 
@@ -36,6 +35,7 @@ void initialise_ports(void)
  */
 int main()
 {
+    initialise_ports();
     /**
      * @brief Construct a new activity 1 object
      *
