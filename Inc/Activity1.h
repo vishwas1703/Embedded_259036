@@ -1,3 +1,5 @@
+#include<avr.h>/io.h>
+
 void initialise_ports(void)
 {
     DDRB|=(1<<PB0);                                         //PB0 as output port
@@ -11,7 +13,7 @@ void initialise_ports(void)
  * 
  */     
 
-void LED_PORTB0_HIGH(void)
+ void LED_PORTB0_HIGH(void)
 {
     return PORTB |=(1<<PB0);
 }
