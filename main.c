@@ -9,23 +9,7 @@
  * 
  */
 #include<avr/io.h>
-/**
- * @brief Initialise of input output ports
- * 
- */
-void initialise_ports(void)
-{
-     /*configure LED pin*/
-    DDRB|=(1<<PB0); 
-    /*PD0 as input port*/                                        
-    DDRD&=~(1<<PD0);  
-    /*PD0 internal pull up*/                                      
-    PORTD|=(1<<PD0);                                        
-   /*PD2 as input port*/   
-    DDRD&=~(1<<PD2);                                        
-     /*PD2 internal pull up*/  
-    PORTD|=(1<<PD2);                                        
-}
+
 /**
  * @brief Main function where the code execution starts
  * 
@@ -33,13 +17,34 @@ void initialise_ports(void)
  * @note PORTB0 is in sink config. i.e when both switch closed the LED will turn ON
  * @note PORTB0 is in sink config. i.e when any of switch is open the LED will turn OFF
  */
+#include "Activity1.h"
+ /**
+  * @brief .h function declares header files
+  * 
+  */
 int main()
 {
-    initialise_ports();
+    initialise_ports_a1();
     /**
      * @brief Construct a new activity 1 object
      *
      */
-    activity_1();
+    
+    while(1)
+    {
+        /**
+         * @brief conditional opearator 
+         * @note if both switches are closed LED will glow, similar to AND gate
+         */
+        if(!((PIND &(1<<PIND0)) | (PIND &(1<<PIND2)) ))   
+        {
+           LED_PORTB0_HIGH();
+        }
+        else
+        {
+            LED_PORTB0_LOW();
+        }
+    }
+
  return 0;
 }

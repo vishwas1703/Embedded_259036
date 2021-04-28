@@ -5,18 +5,18 @@
  *
  *
  */
-uint8_t LED_PORTB0_HIGH(void)
-{
-    return PORTB |=(1<<PB0);
-}
+void LED_PORTB0_HIGH(void);
+
 /** \brief LED connected to PORT B0 will turn low
  *
  *
  */
 
-uint8_t LED_PORTB0_LOW(void)
-{
-     return PORTB&=~(1<<PB0);
+void LED_PORTB0_LOW(void);
+/**
+ * @brief Initialise of input output ports
+ * 
+ */
+void initialise_ports_a1(void);
 
-}
 #endif // LED_H_INCLUDED
