@@ -2,6 +2,6 @@
 int main()
 {
 
-
+DDRD|=1<<PD0;
     
 }
