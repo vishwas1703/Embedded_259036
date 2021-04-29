@@ -19,7 +19,7 @@
  */
 #include "Activity1.h"
  /**
-  * @brief .h function declares header files
+  * @brief contain macros and headers
   * 
   */
 int main(void)
