@@ -8,20 +8,19 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<avr/io.h>
 
-/**
- * @brief Main function where the code execution starts
- * 
- * @return int Return 0 if the program completes successfully
- * @note PORTB0 is in sink config. i.e when both switch closed the LED will turn ON
- * @note PORTB0 is in sink config. i.e when any of switch is open the LED will turn OFF
- */
-#include "Activity1.h"
+
  /**
   * @brief contain macros and headers
   * 
   */
+ #include "Activity1.h"
+/**
+ * @brief Main function where the code execution starts
+ * 
+ * @return  Return 0 if the program completes successfully
+ */
+
 int main(void)
 {
     initialise_ports_a1();

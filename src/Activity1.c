@@ -9,7 +9,6 @@
  * 
  */
 
-#include<avr/io.h>
 
 #include"Activity1.h"
 
@@ -40,12 +39,12 @@ void initialise_ports_a1(void)
 {
      /*configure LED pin*/
     DDRB|=(1<<PB0); 
-    /*PD0 as input port*/                                        
+    /*PD2 as input port*/                                        
     DDRD&=~(1<<PD2);  
-    /*PD0 internal pull up*/                                      
+    /*PD2 internal pull up*/                                      
     PORTD|=(1<<PD2);                                        
-   /*PD2 as input port*/   
+   /*PD3 as input port*/   
     DDRD&=~(1<<PD3);                                        
-     /*PD2 internal pull up*/  
+     /*PD3 internal pull up*/  
     PORTD|=(1<<PD3);                                        
 }

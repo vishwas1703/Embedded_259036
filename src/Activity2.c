@@ -8,6 +8,11 @@
  * @copyright Copyright (c) 2021
  * 
  */
+
+/**
+ * @brief initialise MUX and ADC converter
+ * 
+ */
 void InitADC()
 {
 
@@ -15,6 +20,13 @@ void InitADC()
     ADCSRA=(1<<ADEN)|(7<<ADPS0);            //enable converter and fix prescaler
 
 }
+
+/**
+ * @brief start ADC conversion read ADC value and stop ADC conversion
+ * 
+ * @param ch to select channel
+ * @return uint16_t ADC value
+ */
 uint16_t ReadADC(uint8_t ch)
 {
 
@@ -26,16 +38,33 @@ uint16_t ReadADC(uint8_t ch)
     ADCSRA|=(1<<ADIF);                      //stop conversion
     return(ADC);                            //return 16 bit ADCH and ADCL
 }
+
+/**
+ * @brief initialise  portB1 as output port
+ * 
+ */
 void initialise_ports_a2(void)
 {
      /*configure LED pin*/
     DDRB|=(1<<PB1);
 }
+
+/** \brief LED connected to PORT B1 will turn low
+ *
+ *
+ */
+
 void LED_PORTB1_LOW(void)
 {
       PORTB&=~(1<<PB1);
 
 }
+
+/** \brief LED connected to PORT B1 will turn high
+ *
+ *
+ */
+
 void LED_PORTB1_HIGH(void)
 {
     PORTB |=(1<<PB1);
