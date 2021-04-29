@@ -41,11 +41,11 @@ void initialise_ports_a1(void)
      /*configure LED pin*/
     DDRB|=(1<<PB0); 
     /*PD0 as input port*/                                        
-    DDRD&=~(1<<PD0);  
+    DDRD&=~(1<<PD2);  
     /*PD0 internal pull up*/                                      
-    PORTD|=(1<<PD0);                                        
-   /*PD2 as input port*/   
-    DDRD&=~(1<<PD2);                                        
-     /*PD2 internal pull up*/  
     PORTD|=(1<<PD2);                                        
+   /*PD2 as input port*/   
+    DDRD&=~(1<<PD3);                                        
+     /*PD2 internal pull up*/  
+    PORTD|=(1<<PD3);                                        
 }

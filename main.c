@@ -22,27 +22,40 @@
   * @brief .h function declares header files
   * 
   */
-int main()
+int main(void)
 {
     initialise_ports_a1();
-    /**
-     * @brief Construct a new activity 1 object
-     *
-     */
-    
+    initialise_ports_a2();
+    InitADC();
+    uint16_t temp;
     while(1)
     {
-        /**
-         * @brief conditional opearator 
-         * @note if both switches are closed LED will glow, similar to AND gate
-         */
-        if(!((PIND &(1<<PIND0)) | (PIND &(1<<PIND2)) ))   
+        if(!(read_D &(1<<PIND2)))
         {
-           LED_PORTB0_HIGH();
+            LED_PORTB0_HIGH();
+            if(!(read_D &(1<<PIND3)))
+
+            {
+                    temp=ReadADC(0);
+                    if(temp<0b0000001101111111)
+                    {
+                        LED_PORTB1_HIGH();
+                    }
+                    else
+                        {
+                        LED_PORTB1_LOW();
+                    }
+                }
+
+                else{
+                    LED_PORTB1_LOW();
+                }
         }
+
         else
         {
             LED_PORTB0_LOW();
+            LED_PORTB1_LOW();
         }
     }
 
