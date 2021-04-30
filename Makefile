@@ -1,4 +1,4 @@
-PROJ_NAME = Activity_2
+PROJ_NAME = Car
 
 BUILD_DIR = Build
 

@@ -1,4 +1,4 @@
-DOXY_FILE = Carheater
+DOXY_FILE = Car
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)
