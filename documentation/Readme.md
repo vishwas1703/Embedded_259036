@@ -31,7 +31,6 @@
 * LED to indicate whether heater is ON or not.
 * POT acts as variable temperature.
 * LED connected to PC3 shows Heater is on or not.
-![Activity4](Activity4lowtemp.png)
 |LED (PC3)|Heater status|
 |:--:|:--:|
 |Glow|ON|
@@ -60,13 +59,13 @@
 
 * low temperature value -10 to 0 deg,for that range more power is supplied to generate more heat.
 
-![Activity3](Activity3lowtemp.png)
+![Activity3](Activity3lowtemp.PNG)
 * as temperature reaches 20 to 25 deg,low power is supplied.
 
-![Activity31](Activity3mediumtemp.png)
+![Activity31](Activity3mediumtemp.PNG)
 * if temperature is more than 25 deg no power is supplied.
 
-![Activity32](Activity3hightemp.png)
+![Activity32](Activity3hightemp.PNG)
 
 
 ## Activity4
@@ -74,11 +73,10 @@
 * Serial port registers are configured.
 * Baudrate is calculated and assigned.
 * For particular temperature a message of temperature is sent.
-![Activity4](Activity4lowtemp.png)
+![Activity4](Activity4lowtemp.PNG)
 
+![Activity41](Activity4med1temp.PNG)
 
-![Activity41](Activity4med1temp.png)
+![Activity42](Activity4med2temp.PNG)
 
-![Activity42](Activity4med2temp.png)
-
-![Activity43](Activity4hightemp.png)
+![Activity43](Activity4hightemp.PNG)
