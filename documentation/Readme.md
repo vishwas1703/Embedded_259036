@@ -63,10 +63,10 @@
 ![Activity3](Activity3lowtemp.png)
 * as temperature reaches 20 to 25 deg,low power is supplied.
 
-![Activity3](Activity3mediumtemp.png)
+![Activity31](Activity3mediumtemp.png)
 * if temperature is more than 25 deg no power is supplied.
 
-![Activity3](Activity3hightemp.png)
+![Activity32](Activity3hightemp.png)
 
 
 ## Activity4
@@ -74,12 +74,11 @@
 * Serial port registers are configured.
 * Baudrate is calculated and assigned.
 * For particular temperature a message of temperature is sent.
-
 ![Activity4](Activity4lowtemp.png)
 
 
-![Activity4](Activity4med1temp.png)
+![Activity41](Activity4med1temp.png)
 
-![Activity4](Activity4med2temp.png)
+![Activity42](Activity4med2temp.png)
 
-![Activity4](Activity4hightemp.png)
+![Activity43](Activity4hightemp.png)
