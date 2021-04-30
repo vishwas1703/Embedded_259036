@@ -3,7 +3,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c5dd67bb2c6a4cea8c788baabb4ea5dd)](https://www.codacy.com/gh/vishwas1703/Embedded_259036/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vishwas1703/Embedded_259036&amp;utm_campaign=Badge_Grade)
 # Embedded_259036
 ## Car seat heat control
-* In the places where snow falls or temperature is less that is around zero degree centigrade people feel comfort if the seats are warm.
+* In the places where snow falls or temperature is less,that is around zero degree centigrade, people feel comfort if the car seats are warm while travelling.
 
 * In this project Microcontroller ATMega 328 is used to control seat temperature.
 
