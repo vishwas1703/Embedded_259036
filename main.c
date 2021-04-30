@@ -49,7 +49,7 @@ int main(void)
                         LED_PORTC3_HIGH();
                         if(temp>0  && temp<250)
                             {
-                                OCR1A=950;
+                                OCR1A=980;
                                 unsigned char data_value[]="TEMPERATURE IS BETWEEN -10 AND 0 DEG \n";
                                 int i=0;
                                 if(a==0)
@@ -101,7 +101,7 @@ int main(void)
                             }
                             else if(temp>=750 && temp<894)
                             {
-                                OCR1A=100;
+                                OCR1A=200;
                                  unsigned char data_value[]="TEMPERATURE IS BETWEEN 20 AND 25 DEG \n";
                                 int i=0;
                                 if(d==0)
@@ -119,7 +119,7 @@ int main(void)
                     else
                         {
                         LED_PORTC3_LOW();
-                         OCR1A=50;
+                         OCR1A=0;
                                  unsigned char data_value[]="TEMPERATURE IS ABOVE 25 DEG \n";
                                 int i=0;
                                 if(e==0)
@@ -139,6 +139,7 @@ int main(void)
 
                 else
                     {
+                    OCR1A=0;
                     LED_PORTC3_LOW();
                     }
         }
@@ -147,6 +148,7 @@ int main(void)
         {
             LED_PORTC2_LOW();
             LED_PORTC3_LOW();
+            OCR1A=0;
         }
     }
 
