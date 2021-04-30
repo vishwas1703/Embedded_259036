@@ -11,11 +11,13 @@
 
 
 #include"Activity1.h"
+#include<avr/io.h>
+#include<avr/interrupt.h>
 
 
-void LED_PORTB0_HIGH(void)
+void LED_PORTC2_HIGH(void)
 {
-   PORTB |=(1<<PB0);
+   PORTC |=(1<<PC2);
 }
 
 /** \brief LED connected to PORT B0 will turn low
@@ -23,9 +25,9 @@ void LED_PORTB0_HIGH(void)
  *
  */
 
-void LED_PORTB0_LOW(void)
+void LED_PORTC2_LOW(void)
 {
-      PORTB&=~(1<<PB0);
+      PORTC&=~(1<<PC2);
 
 }
 
@@ -38,7 +40,7 @@ void LED_PORTB0_LOW(void)
 void initialise_ports_a1(void)
 {
      /*configure LED pin*/
-    DDRB|=(1<<PB0); 
+    DDRC|=(1<<PC2); 
     /*PD2 as input port*/                                        
     DDRD&=~(1<<PD2);  
     /*PD2 internal pull up*/                                      

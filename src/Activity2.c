@@ -8,6 +8,9 @@
  * @copyright Copyright (c) 2021
  * 
  */
+#include<avr/io.h>
+#include<avr/interrupt.h>
+#include "Activity2.h"
 
 /**
  * @brief initialise MUX and ADC converter
@@ -46,7 +49,7 @@ uint16_t ReadADC(uint8_t ch)
 void initialise_ports_a2(void)
 {
      /*configure LED pin*/
-    DDRB|=(1<<PB1);
+    DDRC|=(1<<PC3);
 }
 
 /** \brief LED connected to PORT B1 will turn low
@@ -54,9 +57,9 @@ void initialise_ports_a2(void)
  *
  */
 
-void LED_PORTB1_LOW(void)
+void LED_PORTC3_LOW(void)
 {
-      PORTB&=~(1<<PB1);
+      PORTC&=~(1<<PC3);
 
 }
 
@@ -65,7 +68,7 @@ void LED_PORTB1_LOW(void)
  *
  */
 
-void LED_PORTB1_HIGH(void)
+void LED_PORTC3_HIGH(void)
 {
-    PORTB |=(1<<PB1);
+    PORTC |=(1<<PC3);
 }

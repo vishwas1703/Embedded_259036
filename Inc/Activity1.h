@@ -12,8 +12,6 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<avr/io.h>
-
 
 /** \brief LED connected to PORT B0 will glow
  *
