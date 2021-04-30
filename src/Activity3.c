@@ -1,3 +1,14 @@
+
+/**
+ * @file Activity3.c
+ * @author Vishwas ()
+ * @brief Timer and counter ports are initialised
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<avr/io.h>
 #include<avr/interrupt.h>
 #include"Activity3.h"

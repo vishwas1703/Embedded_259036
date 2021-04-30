@@ -1,7 +1,21 @@
+/**
+ * @file Activity4.c
+ * @author Vishwas.H ()
+ * @brief serial communication ports are initilised
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<avr/io.h>
 #include<avr/interrupt.h>
 #include "Activity4.h"
-
+/**
+ * @brief Baudrate and configuring enable pins
+ * 
+ * @param ubrr_value vlaue to choose baudrate as 9600 bps
+ */
 void USARTInit(uint16_t ubrr_value)
 {
 
@@ -11,13 +25,17 @@ void USARTInit(uint16_t ubrr_value)
     UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 
 }
-
+/**
+ * @brief function to write data into serial port
+ * 
+ * @param data data supposed to transmit
+ */
 void USARTWrite(char data)
 {
 
     while(!(UCSR0A & (1<<UDRE0)))
     {
-
+            //do nothing
 
     }
     UDR0=data;
