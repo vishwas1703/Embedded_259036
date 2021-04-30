@@ -51,9 +51,9 @@ int main(void)
                             {
                                 OCR1A=980;
                                 unsigned char data_value[]="TEMPERATURE IS BETWEEN -10 AND 0 DEG \n";
-                                int i=0;
                                 if(a==0)
                                 {
+                                 int i=0;
                                 while(data_value[i]!=0)
                               {
 
@@ -68,12 +68,9 @@ int main(void)
                             {
                                 OCR1A=700;
                                  unsigned char data_value[]="TEMPERATURE IS BETWEEN 0 AND 10 DEG \n";
-                                int i=0;
-
                                 if(b==0)
                                 {
-
-
+                                  int i=0;
                                     while(data_value[i]!=0)
                               {
 
@@ -87,10 +84,10 @@ int main(void)
                             {
                                 OCR1A=400;
                                  unsigned char data_value[]="TEMPERATURE IS BETWEEN 10 AND 20 DEG \n";
-                                int i=0;
                                if(c==0)
                                {
-                                   while(data_value[i]!=0)
+                                 int i=0;   
+                                while(data_value[i]!=0)
                               {
 
                                USARTWrite(data_value[i]);
@@ -103,10 +100,10 @@ int main(void)
                             {
                                 OCR1A=200;
                                  unsigned char data_value[]="TEMPERATURE IS BETWEEN 20 AND 25 DEG \n";
-                                int i=0;
                                 if(d==0)
                                 {
-                                while(data_value[i]!=0)
+                                 int i=0;
+                                 while(data_value[i]!=0)
                               {
 
                                USARTWrite(data_value[i]);
@@ -121,10 +118,10 @@ int main(void)
                         LED_PORTC3_LOW();
                          OCR1A=0;
                                  unsigned char data_value[]="TEMPERATURE IS ABOVE 25 DEG \n";
-                                int i=0;
                                 if(e==0)
                                 {
-                                while(data_value[i]!=0)
+                                int i=0;
+                                 while(data_value[i]!=0)
                               {
 
                                USARTWrite(data_value[i]);
