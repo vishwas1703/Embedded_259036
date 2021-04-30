@@ -16,10 +16,10 @@
   */
 #include<avr/io.h>
 #include<avr/interrupt.h>
- #include "Activity1.h"
- #include "Activity2.h"
- #include "Activity3.h"
- #include "Activity4.h"
+#include "Activity1.h"
+#include "Activity2.h"
+#include "Activity3.h"
+#include "Activity4.h"
 /**
  * @brief Main function where the code execution starts
  * 
@@ -37,10 +37,10 @@ int main(void)
     int a=0;int b=0;int c=0;int d=0;int e=0;
     while(1)
     {
-        if(!(read_D &(1<<PIND2)))
+        if(!(PIND &(1<<PIND2)))
         {
             LED_PORTC2_HIGH();
-            if(!(read_D &(1<<PIND3)))
+            if(!(PIND &(1<<PIND3)))
 
             {
                     temp=ReadADC(0);

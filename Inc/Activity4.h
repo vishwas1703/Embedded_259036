@@ -1,3 +1,5 @@
+#ifndef AC4_HEADER
+#define AC4_HEADER
 /**
  * @file Activity4.h
  * @author Vishwas.H()

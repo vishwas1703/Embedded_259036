@@ -1,6 +1,6 @@
 #ifndef LED_H_INCLUDED
 #define LED_H_INCLUDED
-
+#define read_D PIND
 
 /**
  * @file Activity1.h
@@ -30,5 +30,9 @@ void LED_PORTB0_LOW(void);
  * 
  */
 void initialise_ports_a1(void);
+
+void LED_PORTC2_HIGH(void);
+
+void LED_PORTC2_LOW(void);
 
 #endif // LED_H_INCLUDED

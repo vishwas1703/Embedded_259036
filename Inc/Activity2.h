@@ -23,4 +23,6 @@ uint16_t ReadADC(uint8_t);
  * 
  */
 void initialise_ports_a2(void);
+void LED_PORTC3_HIGH(void);
+void LED_PORTC3_LOW(void);
  #endif 
