@@ -1,4 +1,4 @@
-#   Car seat Heater control
+# Car seat Heater control
 *   consists of two switches or buttons.
 *   switch (PD2) for seat.
 
@@ -7,12 +7,12 @@
 |close|person is sitting|
 |open|person is not sitting|
 
+
 *   another switch (PD3) is used to turn on heater which consists of Temperature sensor.
 
 *   LED connected to PC2,shows the visual status of seat switch.
 
-
-##  simul IDE
+## simul IDE
 ### photos
 
 *   when  switches are open LED is not glowing.
@@ -26,7 +26,7 @@
 
 
 
-##  Activity 2
+## Activity 2
 
 *   In activity 2 one LED (PC3) and one Potentiometer are added.
 *   LED to indicate whether heater is ON or not.
@@ -47,7 +47,7 @@
 
 *   POT output is analog value in order to read that ADC initialisation is done in program.
 
-##  Activity3
+## Activity3
 
 *   in activity 3 different PWM signals are generated for different temperature value measured by temp sensor.
 
