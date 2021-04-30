@@ -73,6 +73,7 @@
 * Serial port registers are configured.
 * Baudrate is calculated and assigned.
 * For particular temperature a message of temperature is sent.
+
 ![Activity4](Activity4lowtemp.PNG)
 
 ![Activity41](Activity4med1temp.PNG)
