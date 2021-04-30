@@ -7,9 +7,7 @@
 |close|person is sitting|
 |open|person is not sitting|
 
-
 *   another switch (PD3) is used to turn on heater which consists of Temperature sensor.
-
 *   LED connected to PC2,shows the visual status of seat switch.
 
 ## simul IDE
@@ -18,13 +16,9 @@
 *   when  switches are open LED is not glowing.
 ![Activity1_off.PNG](Activity1.PNG) 
 
-
-
 *   When only person is sitting but heater button is not closed LED(PC2) is glowing
 
 ![Activity1_seat_ok_no_heater](Activity1_seat_switch_close.PNG)
-
-
 
 ## Activity 2
 
@@ -32,6 +26,7 @@
 *   LED to indicate whether heater is ON or not.
 *   POT acts as variable temperature.
 *   LED connected to PC3 shows Heater is on or not.
+
 |LED (PC3)|Heater status|
 |:--:|:--:|
 |Glow|ON|
@@ -68,7 +63,6 @@
 *   if temperature is more than 25 deg no power is supplied.
 
 ![Activity32](Activity3hightemp.PNG)
-
 
 ## Activity4
 
