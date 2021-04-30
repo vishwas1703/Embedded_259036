@@ -31,7 +31,7 @@
 * LED to indicate whether heater is ON or not.
 * POT acts as variable temperature.
 * LED connected to PC3 shows Heater is on or not.
-
+![Activity4](Activity4lowtemp.png)
 |LED (PC3)|Heater status|
 |:--:|:--:|
 |Glow|ON|
