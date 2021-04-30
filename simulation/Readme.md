@@ -27,6 +27,7 @@
 
 
 ##  Activity 2
+
 *   In activity 2 one LED (PC3) and one Potentiometer are added.
 *   LED to indicate whether heater is ON or not.
 *   POT acts as variable temperature.
@@ -47,6 +48,7 @@
 *   POT output is analog value in order to read that ADC initialisation is done in program.
 
 ##  Activity3
+
 *   in activity 3 different PWM signals are generated for different temperature value measured by temp sensor.
 
 |Temp range in deg |PWM value|
@@ -69,6 +71,7 @@
 
 
 ## Activity4
+
 *   In Activity4 Temperature data is displayed in serial port.
 *   Serial port registers are configured.
 *   Baudrate is calculated and assigned.
